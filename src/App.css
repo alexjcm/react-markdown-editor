@@ -1,0 +1,13 @@
+.App {
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+}
+
+.markdownEditor {
+  display: flex;
+  height: 90vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
