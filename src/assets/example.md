@@ -13,7 +13,37 @@
 ~~Strikethrough~~
 
 
+## Images and emojis
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
+🎉🚀📝🔍🔖📌❤️
+
+## HTML in markdown
+
+Some characters, like &aelig;, &amp; and similar should be handled properly. Does anyone actually like the fact that you can embed HTML in markdown?
+
+<image
+  src="https://cdn9.pngable.com/1/20/14/yyKYW3qdZU/logo-brand-markdown.jpg"
+  width="390"
+  height="280"
+/>
+
+
+## Math 
+
+Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following
+equation.
+
+$$
+L = \frac{1}{2} \rho v^2 S C_L
+$$
+
+
 ## Code
+
+Inline `code`
 
 Syntax highlighting
 
@@ -36,9 +66,6 @@ ReactDOM.render(
 )
 ```
 
-Inline `code`
-
-
 ## Lists
 
 Unordered
@@ -55,8 +82,6 @@ Ordered
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-
 
 Loose lists?
 
@@ -81,33 +106,6 @@ Autoconverted link https://github.com
 [Link references][React]
 
 [React]: https://reactjs.org "React, A JavaScript library for building user interfaces"
-
-
-## Images and emojis
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-
-🎉🚀📝🔍🔖📌❤️
-
-## HTML in markdown
-
-Some characters, like &aelig;, &amp; and similar should be handled properly. Does anyone actually like the fact that you can embed HTML in markdown?
-
-<image
-  src="https://cdn9.pngable.com/1/20/14/yyKYW3qdZU/logo-brand-markdown.jpg"
-  width="390"
-  height="280"
-/>
-
-
-## Math 
-
-Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following
-equation.
-
-$$
-L = \frac{1}{2} \rho v^2 S C_L
-$$
 
 
 ## Horizontal Rules

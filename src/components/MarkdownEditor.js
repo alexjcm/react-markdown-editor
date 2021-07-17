@@ -3,16 +3,14 @@ import {useState, useEffect} from 'react';
 import ReactMarkdown from 'react-markdown';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {docco} from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import {AiOutlineEye} from 'react-icons/ai';
-import {FaMarkdown} from 'react-icons/fa';
 import gfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import 'katex/dist/katex.min.css'; // `rehype-katex` does not import the CSS for you
+import 'katex/dist/katex.min.css';
 
 import './MarkdownEditor.css';
-import exampleMDPath from "../assets/example.md"
+import exampleMarkdown from '../assets/example.md';
 
 const components = {
   code({inline, className, children, ...props}) {
@@ -36,7 +34,7 @@ const components = {
 function MardownEditor() {
   const [markdown, setMarkdown] = useState();
   useEffect(() => {
-    fetch(exampleMDPath)
+    fetch(exampleMarkdown)
       .then((response) => response.text())
       .then((data) => {
         setMarkdown(data);
@@ -46,10 +44,7 @@ function MardownEditor() {
   return (
     <>
       <div className="contain">
-        <div className="headerMD">
-          <FaMarkdown />
-          WRITE MARKDOWN
-        </div>
+        <div className="headerMD">MARKDOWN</div>
         <textarea
           className="textarea"
           value={markdown}
@@ -58,10 +53,7 @@ function MardownEditor() {
       </div>
 
       <div className="contain">
-        <div className="headerMD">
-          <AiOutlineEye />
-          PREVIEW
-        </div>
+        <div className="headerMD">PREVIEW</div>
         <ReactMarkdown
           className="markdown"
           rehypePlugins={[rehypeRaw, rehypeKatex]}
