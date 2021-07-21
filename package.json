@@ -23,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "docker:build": "docker build -f Dockerfile.dev --rm -t markdown-image-editor .",
+    "docker:run": "docker run --rm -v /home/alexjcm/Documentos/projects/markdown-editor:/markdown-editor -p 3000:3000 markdown-image-editor"
   },
   "eslintConfig": {
     "extends": [
