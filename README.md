@@ -41,10 +41,23 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Contributing 🤗
+## Build and run with Docker
+
+`docker build -f Dockerfile.prod -t markdown-editor .`
+`docker run --rm -p 3000:80 --name app-markdown markdown-editor`
+
+Now that we have our optimized Docker image, let’s push it to Docker Hub:
+`docker tag markdown-editor alexjcm/markdown-editor`
+`docker login`
+`docker push alexjcm/markdown-editor`
+
+Now that you’re in the droplet, let’s create that docker container:
+`docker run -d -p 3000:80 --name app-markdown alexjcm/markdown-editor`
+
+## Contributing
 
 Pull requests are welcome.
 
 ## License
 
-React is [MIT licensed](./LICENSE).
+[MIT licensed](./LICENSE).

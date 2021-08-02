@@ -10,7 +10,4 @@ services:
 # stdin_open: true
 # tty: true
 
-# env_file:
-#   - ./.env
-
 # "build .": Indica donde está el Dockerfile a utilizar para crear el contenedor. Al definir “.” considerará el Dockerfile existente en directorio actual.

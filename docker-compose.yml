@@ -3,9 +3,7 @@ services:
   markdown-editor:
     ports:
       - "3000:3000"
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
+    build: .
     volumes:
       - /home/alexjcm/Documentos/projects/markdown-editor:/markdown-editor
     working_dir: /markdown-editor
