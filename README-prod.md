@@ -15,3 +15,8 @@ Now that you’re in the droplet, let’s create that docker container:
 `docker pull alexjcm/markdown-editor`
 
 `docker run --rm -d -p 80:80 -p 443:443 -v /etc/ssl/my-server:/etc/nginx/certs --name markdown-app alexjcm/markdown-editor`
+
+
+# Build and run with gh-pages
+
+`npm run deploy`
