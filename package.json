@@ -23,9 +23,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "docker:build": "docker build -f Dockerfile.dev --rm -t markdown-editor-image .",
+    "docker:build": "docker build --rm -f Dockerfile.dev --rm -t markdown-editor-image .",
     "docker:run": "docker run --rm -v /home/alexjcm/Documentos/projects/markdown-editor:/markdown-editor -p 3000:3000 --name markdown-editor markdown-editor-image",
-    "docker:stop": "docker rm -f markdown-editor"
+    "docker:stop": "docker rm -f markdown-editor",
+    "docker:build-prod": "docker build --rm -f Dockerfile.prod -t alexjcm/markdown-editor ." 
   },
   "eslintConfig": {
     "extends": [
