@@ -51,17 +51,9 @@ Syntax highlighting
 import React from 'react'
 import ReactDOM from 'react-dom'
 import MyComponent from './components/MyComponent'
-import MyFancyRule from './components/my-fancy-rule.js'
 
 ReactDOM.render(
-  <MyComponent
-    components={{
-      // Use h2s instead of h1s
-      h1: 'h2',
-      hr: ({node, ...props}) => <MyFancyRule {...props} />
-    }}
-  >
-  </MyComponent>,
+  <MyComponent />,
   document.querySelector('#content')
 )
 ```
