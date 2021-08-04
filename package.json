@@ -48,6 +48,10 @@
     ]
   },
   "jest": {
+    "coveragePathIgnorePatterns": [  
+      "<rootDir>/src/index.js",
+      "<rootDir>/src/reportWebVitals.js"
+    ],
     "transformIgnorePatterns": [
       "/node_modules/(?!katex|react-syntax-highlighter)"
     ]
