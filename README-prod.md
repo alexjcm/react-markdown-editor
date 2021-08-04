@@ -1,8 +1,15 @@
+# Build and run with Docker for development
+
+`docker build --rm -t alexjcm/markdown-editor .`
+
+`docker run --rm -p 3000:3000 --name markdown-app alexjcm/markdown-editor`
+
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+
 # Build and run with Docker for production
 
 `docker build --rm -f Dockerfile.prod -t alexjcm/markdown-editor .`
-
-`docker run --rm -p 80:80 --name markdown-app alexjcm/markdown-editor`
 
 Now that we have our optimized Docker image, let’s push it to Docker Hub:
 
@@ -19,4 +26,4 @@ Now that you’re in the droplet, let’s create that docker container:
 
 # Build and run with gh-pages
 
-`npm run deploy`
+Add github workflow with JamesIves/github-pages-deploy-action@4.1.4

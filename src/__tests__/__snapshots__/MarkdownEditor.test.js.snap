@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="contain"
+  >
+    <div
+      className="headerMD"
+    >
+      MARKDOWN
+    </div>
+    <textarea
+      autoFocus={true}
+      className="textarea"
+      onChange={[Function]}
+    />
+  </div>,
+  <div
+    className="contain"
+  >
+    <div
+      className="headerMD"
+    >
+      PREVIEW
+    </div>
+    <div
+      className="markdown"
+    />
+  </div>,
+]
+`;

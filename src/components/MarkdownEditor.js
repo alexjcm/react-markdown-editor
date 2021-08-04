@@ -1,5 +1,3 @@
-import {useState, useEffect} from 'react';
-
 import ReactMarkdown from 'react-markdown';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import {docco} from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -10,7 +8,7 @@ import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
 
 import './MarkdownEditor.css';
-import exampleMarkdown from '../assets/example.md';
+import useInitMarkdown from '../hooks/useInitialMarkdown';
 
 const components = {
   code({inline, className, children, ...props}) {
@@ -32,14 +30,7 @@ const components = {
 };
 
 function MardownEditor() {
-  const [markdown, setMarkdown] = useState();
-  useEffect(() => {
-    fetch(exampleMarkdown)
-      .then((response) => response.text())
-      .then((data) => {
-        setMarkdown(data);
-      });
-  }, []);
+  const {markdown, setMarkdown} = useInitMarkdown();
 
   return (
     <>
