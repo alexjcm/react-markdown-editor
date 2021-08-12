@@ -2,7 +2,7 @@
 
 `docker build --rm -t alexjcm/markdown-editor .`
 
-`docker run --rm -p 3000:3000 --name markdown-app alexjcm/markdown-editor`
+`docker run --rm -v ${pwd}:/markdown-editor -p 3000:3000 --name markdown-app alexjcm/markdown-editor`
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -27,3 +27,5 @@ Now that you’re in the droplet, let’s create that docker container:
 # Build and run with gh-pages
 
 Add github workflow with JamesIves/github-pages-deploy-action@4.1.4
+
+Next, select the gh-pages branch of the repository under: Configuration -> Pages -> Source
