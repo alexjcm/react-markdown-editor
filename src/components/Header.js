@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Header.css';
-import {GoMarkGithub} from 'react-icons/go';
+import { GoMarkGithub } from 'react-icons/go';
 
 function Header() {
   return (

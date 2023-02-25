@@ -1,6 +1,6 @@
 import ReactMarkdown from 'react-markdown';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import {docco} from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import gfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import remarkMath from 'remark-math';
@@ -11,7 +11,7 @@ import './MarkdownEditor.css';
 import useInitMarkdown from '../hooks/useInitialMarkdown';
 
 const components = {
-  code({inline, className, children, ...props}) {
+  code({ inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || '');
     return !inline && match ? (
       <SyntaxHighlighter
@@ -30,7 +30,7 @@ const components = {
 };
 
 function MardownEditor() {
-  const {markdown, setMarkdown} = useInitMarkdown();
+  const { markdown, setMarkdown } = useInitMarkdown();
 
   return (
     <>

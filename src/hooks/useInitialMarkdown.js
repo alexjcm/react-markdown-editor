@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 import exampleMarkdown from '../assets/example.md';
 
@@ -12,7 +12,7 @@ const useInitMarkdown = () => {
       });
   }, []);
 
-  return {markdown};
+  return { markdown };
 };
 
 export default useInitMarkdown;
