@@ -1,25 +1,8 @@
 {
   "name": "react-markdown-editor",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
   "homepage": "https://alexjcm.github.io/react-markdown-editor",
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.5",
-    "@testing-library/react": "^11.1.1",
-    "@testing-library/user-event": "^12.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-icons": "^4.7.1",
-    "react-markdown": "^8.0.5",
-    "react-scripts": "4.0.3",
-    "react-syntax-highlighter": "^15.5.0",
-    "rehype-highlight": "^6.0.0",
-    "rehype-katex": "^6.0.2",
-    "rehype-raw": "^6.1.1",
-    "remark-gfm": "^3.0.1",
-    "remark-math": "^5.1.1",
-    "web-vitals": "^1.1.2"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -28,6 +11,20 @@
     "docker-run": "docker run --rm -v ${pwd}:/markdown-editor -p 3000:3000 --name markdown-editor-app markdown-editor",
     "docker-stop": "docker rm -f markdown-editor-app",
     "docker-build-prod": "docker build --rm -f Dockerfile.prod -t alexjcm/markdown-editor ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-markdown": "^8.0.6",
+    "react-scripts": "5.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-highlight": "^6.0.0",
+    "rehype-katex": "^6.0.2",
+    "rehype-raw": "^6.1.1",
+    "remark-gfm": "^3.0.1",
+    "remark-math": "^5.1.1",
+    "web-vitals": "^3.3.0"
   },
   "eslintConfig": {
     "extends": [
@@ -57,7 +54,10 @@
     ]
   },
   "devDependencies": {
-    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "@testing-library/jest-dom": "^5.15.1",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^14.4.3",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.8.0",
     "enzyme": "^3.11.0"
   }
 }
