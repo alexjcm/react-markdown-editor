@@ -24,10 +24,11 @@
 
 Some characters, like &aelig;, &amp; and similar should be handled properly. Does anyone actually like the fact that you can embed HTML in markdown?
 
-<image
-  src="https://cdn9.pngable.com/1/20/14/yyKYW3qdZU/logo-brand-markdown.jpg"
+<img
+  src="/markdown-logo.png"
   width="390"
   height="280"
+  alt="Markdown Logo"
 />
 
 

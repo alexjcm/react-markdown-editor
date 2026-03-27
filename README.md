@@ -1,53 +1,48 @@
 # React Markdown Editor
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/facebook/react/blob/master/LICENSE) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) [![codecov](https://codecov.io/gh/alexjcm/react-markdown-editor/branch/main/graph/badge.svg)](https://codecov.io/gh/alexjcm/react-markdown-editor) [![Build & deploy](https://github.com/alexjcm/react-markdown-editor/actions/workflows/build-and-deploy.yml/badge.svg?branch=main)](https://github.com/alexjcm/react-markdown-editor/actions/workflows/build-and-deploy.yml)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/alexjcm/react-markdown-editor/blob/master/LICENSE) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg) [![Build & deploy](https://github.com/alexjcm/react-markdown-editor/actions/workflows/build-and-deploy.yml/badge.svg?branch=main)](https://github.com/alexjcm/react-markdown-editor/actions/workflows/build-and-deploy.yml)
+
+A modern, fast, and minimalist Markdown editor built with React 19 and Vite.
+
+## Design Aesthetic: Functional Minimalism
+This application features a **Functional Minimalism** design—focusing on clarity, premium typography (Inter & JetBrains Mono), and a clean, light-themed interface built for maximum usability without distractions.
 
 ## Features
+- **Real-time Preview**: Side-by-side editing and rendering.
+- **GFM Support**: GitHub Flavored Markdown out of the box.
+- **Math & Formulas**: Integrated KaTeX support for mathematical expressions.
+- **Syntax Highlighting**: Beautiful code blocks powered by prism/hlj.
+- **Modern Stack**: Powered by React 19 and Vite 6.
 
-- Markdown support
-- Code support
-- Image support
-- Math symbols and formulas
-- Emoji chat
+## Getting Started
 
-## Installation
+### Installation
+```bash
+npm install
+```
 
-`npm install`
+### Development
+Run the app in development mode:
+```bash
+npm run dev
+# or
+npm start
+```
 
-## Starting server
+### Build
+Build the app for production (output to `dist/`):
+```bash
+npm run build
+```
 
-In the project directory, you can run the app in the development mode:
-
-`npm start`
-
-## More Scripts avaliables
-
-`npm test`
-
-Launches the test runner in the interactive watch mode.
-
-`npm build`
-
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
-
-## Installation with Docker
-
-`npm run docker-build`
-
-`npm run docker-run`
-
-Or
-
-`docker build --rm -t markdown-editor .`
-
-`docker run --rm -p 3000:3000 --name markdown-app markdown-editor`
-
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Testing
+Run the test suite using Vitest:
+```bash
+npm run test
+```
 
 ## Contributing
-
-Pull requests are welcome.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-
 [MIT licensed](./LICENSE).

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import MarkdownEditor from './components/MarkdownEditor';
 import Header from './components/Header';
 import './App.css';

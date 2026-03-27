@@ -1,7 +1,5 @@
-import React from 'react';
-
 import './Header.css';
-import { GoMarkGithub } from 'react-icons/go';
+import { FaGithub } from 'react-icons/fa';
 
 function Header() {
   return (
@@ -12,7 +10,7 @@ function Header() {
         href="https://github.com/alexjcm/react-markdown-editor"
         target="_blank"
         rel="noopener noreferrer">
-        View on Github <GoMarkGithub />
+        View on Github <FaGithub />
       </a>
     </div>
   );

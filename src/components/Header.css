@@ -1,20 +1,37 @@
 .header {
+  height: var(--header-height);
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #2c2c2c;
-  height: 50px;
-  padding: 4px 10px 5px 10px;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid #1f2937;
+  background: #111827;
 }
 
 .headerTitle {
-  text-align: center;
-  color: #c5c2c2;
+  font-size: 1.50rem;
+  font-weight: 600;
+  margin: 0;
+  color: #f9fafb;
+  letter-spacing: -0.02em;
 }
 
 .linkGithub {
-  padding-top: 3px;
-  padding-left: 20px;
-  color: #b9b9b9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+  border: 1px solid #374151;
+}
+
+.linkGithub:hover {
+  background: #1f2937;
+  color: #ffffff;
+  border-color: #4b5563;
 }
