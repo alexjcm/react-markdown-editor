@@ -22,7 +22,7 @@ const useInitMarkdown = () => {
     return () => controller.abort();
   }, []);
 
-  return { markdown };
+  return { markdown, setMarkdown };
 };
 
 export default useInitMarkdown;
